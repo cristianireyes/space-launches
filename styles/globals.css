@@ -91,20 +91,26 @@ main {
   padding-inline: 16px;
 }
 
+.card-information {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.card-subtitle-container {
+  margin: auto 50px;
+}
+
 .card-subtitle {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
-  text-align: center;
   color: #dbeafe;
   font-size: 14px;
-  text-align: center;
-  position: absolute;
-  width: 256px;
-  height: 28px;
-  left: 47px;
-  top: 376px;
+}
+
+.time-launch {
+  padding-top: 16px;
 }
 
 .date {
@@ -114,9 +120,7 @@ main {
   line-height: 100%;
   color: #dbeafe;
   font-size: 16px;
-  position: absolute;
-  left: 80px;
-  top: 430px;
+  padding-right: 24px;
 }
 
 .hour {
@@ -126,9 +130,11 @@ main {
   line-height: 100%;
   color: #dbeafe;
   font-size: 16px;
-  position: absolute;
-  right: 80px;
-  top: 430px;
+  padding-left: 24px;
+}
+
+.location-container {
+  padding-top: 16px;
 }
 
 .location {
@@ -138,9 +144,4 @@ main {
   line-height: 100%;
   color: #dbeafe;
   font-size: 10px;
-  position: absolute;
-  width: 286px;
-  height: 12px;
-  left: 38px;
-  top: 474px;
 }
