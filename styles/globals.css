@@ -1,3 +1,7 @@
+:root {
+  --color-text-body: #dbeafe;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,6 +14,7 @@ body {
   overflow-x: hidden;
   background-color: #000000;
   font-family: 'Inter', sans-serif;
+  font-style: normal;
 }
 
 main {
@@ -34,18 +39,18 @@ main {
 }
 
 .title {
-  font-style: normal;
   font-weight: 800;
   font-size: 96px;
   line-height: 116px;
 }
 
 .sub-title {
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
 }
+
+/** Component Cards **/
 
 .card {
   padding: 16px;
@@ -84,7 +89,6 @@ main {
 
 .card-title span {
   color: #264291;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 32px;
@@ -92,44 +96,34 @@ main {
 }
 
 .card-information {
-  text-align: center;
+  padding-top: 8px;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: calc(30% - 16px);
 }
 
-.card-subtitle-container {
-  margin: auto 50px;
+.card-information span {
+  font-weight: 500;
+  color: var(--color-text-body);
 }
 
 .card-subtitle {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
-  color: #dbeafe;
+  text-align: center;
+  padding-inline: 24px;
+}
+
+.card-subtitle span {
   font-size: 14px;
 }
 
 .time-launch {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%;
-  color: #dbeafe;
   display: flex;
   justify-content: center;
   gap: 16px;
 }
 
-.location-container {
-  padding-top: 16px;
-}
-
-.location {
+.location span {
   font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%;
-  color: #dbeafe;
 }
