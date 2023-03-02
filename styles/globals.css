@@ -1,3 +1,7 @@
+:root {
+  --color-text-body: #dbeafe;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,6 +14,7 @@ body {
   overflow-x: hidden;
   background-color: #000000;
   font-family: 'Inter', sans-serif;
+  font-style: normal;
 }
 
 main {
@@ -34,15 +39,91 @@ main {
 }
 
 .title {
-  font-style: normal;
   font-weight: 800;
   font-size: 96px;
   line-height: 116px;
 }
 
 .sub-title {
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+}
+
+/** Component Cards **/
+
+.card {
+  padding: 16px;
+  width: 350px;
+  height: 500px;
+  background-color: #4d1c22;
+  border-radius: 15px;
+  position: relative;
+}
+
+.card-image {
+  padding-bottom: 0;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-title {
+  background-color: #fea91b;
+  border-radius: 5px;
+  height: 32px;
+  text-align: center;
+  margin-top: -16px;
+  margin-inline: 32px;
+  position: relative;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.card-title span {
+  color: #264291;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 32px;
+  padding-inline: 16px;
+}
+
+.card-information {
+  padding-top: 8px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(30% - 16px);
+}
+
+.card-information span {
+  font-weight: 500;
+  color: var(--color-text-body);
+}
+
+.card-subtitle {
+  text-align: center;
+  padding-inline: 24px;
+}
+
+.card-subtitle span {
+  font-size: 14px;
+}
+
+.time-launch {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.location span {
+  font-size: 10px;
 }
