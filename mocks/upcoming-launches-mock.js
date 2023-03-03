@@ -1,4 +1,4 @@
-export const UPCOMING_LAUNCH = [
+export const UPCOMING_LAUNCHES = [
   {
     id: 'bc325945-4bee-4412-84e1-14998b2eba5f',
     url: 'https://ll.thespacedevs.com/2.2.0/launch/bc325945-4bee-4412-84e1-14998b2eba5f/',
