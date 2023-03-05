@@ -34,7 +34,6 @@ function getCard(upcomingLaunch) {
   </div>
 </div>
   `
+
   return card
 }
-
-getCard(UPCOMING_LAUNCHES[0])
