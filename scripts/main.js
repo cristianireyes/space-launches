@@ -37,3 +37,19 @@ function getCard(upcomingLaunch) {
 
   return card
 }
+
+function getCardsAsString(launches) {
+  const launchCards = launches.map(launch => getCard(launch))
+  let cards = ''
+  /* launchCards.forEach(function (card) {
+    cards += card
+  }) */
+  launchCards.forEach(card => (cards += card))
+
+  return cards
+}
+
+const cardsAsString = getCardsAsString(UPCOMING_LAUNCHES)
+
+let ship = document.getElementById('launches')
+ship.innerHTML = cardsAsString

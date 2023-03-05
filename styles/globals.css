@@ -127,3 +127,36 @@ main {
 .location span {
   font-size: 10px;
 }
+
+.upcoming-launches {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+#launches {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 36px;
+  width: max-content;
+}
+
+h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--color-text-body);
+}
