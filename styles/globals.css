@@ -30,7 +30,7 @@ main {
 .page-cover {
   background-image: url(../assets/space.jpg);
   background-repeat: no-repeat;
-  background-position: 0 -200px;
+  background-position: center -200px;
   text-align: center;
   position: relative;
   padding-top: 48px;
